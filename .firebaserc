@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "radogostbandpl"
+  },
+  "targets": {
+    "radogostbandpl": {
+      "hosting": {
+        "radogost": [
+          "radogostbandpl"
+        ]
+      }
+    }
+  }
+}

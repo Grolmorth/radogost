@@ -1,0 +1,40 @@
+<div class="info">
+
+    <div class="disc">
+        <div class="container">
+
+            <div class="row" id="row">
+                <div class="col-sm-6 col-md-4 col-lg-4 p-2 m-0" *ngFor="let album of albums, let i=index">
+                    <button type="button" class="btn btn-dark m-0 p-0" data-toggle="modal" attr.data-target="#album{{i}}">
+                <img src="assets/albumy/{{i+1}}300.png" class="img-fluid img-thumbnail">
+              </button>
+
+                    <div class="modal fade" id="album{{i}}">
+                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header">
+                                    <h4 class="modal-title m-auto text-light">{{album.title}}</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="assets/albumy/{{i+1}}500.png" class="maxi-width float-left mr-2 pr-2">
+                                    <div class="text">
+                                        <h2>{{album.title}} - {{album.year}} </h2>
+                                        <ol>
+                                            <li *ngFor="let track of album.tracklist">
+                                                {{track}}
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+
+                                    <button type="button" class="btn btn-light" data-dismiss="modal">Zamknij</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

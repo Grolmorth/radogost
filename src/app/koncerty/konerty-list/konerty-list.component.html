@@ -1,0 +1,15 @@
+<table>
+    <thead>
+        <tr>
+            <th width="20%">Koncert w</th>
+            <th width="20%">Zagrają z nami</th>
+            <th width="20%">Kiedy</th>
+            <th width="20%">Link</th>
+            <th width="20%">Edit</th>
+        </tr>
+    </thead>
+</table>
+
+<div *ngFor="let koncert of koncert ">
+    <app-konerty-edit [koncert]='koncert'></app-konerty-edit>
+</div>

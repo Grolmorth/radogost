@@ -1,0 +1,29 @@
+<p class="text" *ngIf="koncert.length ===0">Aktualnie brak koncertów :(</p>
+
+<div *ngIf="koncert.length !==0" class="info">
+    <table class="tablehead">
+        <th>Koncert w</th>
+        <th>Zagrają z nami</th>
+        <th>Kiedy</th>
+        <th>Link</th>
+    </table>
+
+    <div class="tbody" *ngFor="let koncert of koncert ">
+        <div>
+            <table class="tablebody" *ngIf="koncert">
+                <td>
+                    {{koncert.where}}
+                </td>
+                <td>
+                    {{koncert.with}}
+                </td>
+                <td>
+                    {{koncert.when}}
+                </td>
+                <td>
+                    <a class="text" href="{{koncert.link}}" target="_blank ">Link Wydarzenia</a>
+                </td>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<table>
+    <tbody *ngIf="koncert">
+        <td width="20%">
+            {{koncert.where}}
+        </td>
+        <td width="20%">
+            {{koncert.with}}
+        </td>
+        <td width="20%">
+            {{koncert.when}}
+        </td>
+        <td width="20%">
+            {{koncert.link}}
+        </td>
+        <td>
+            <button (click)='deleteKoncert()'>Usuń</button>
+        </td>
+    </tbody>
+</table>
