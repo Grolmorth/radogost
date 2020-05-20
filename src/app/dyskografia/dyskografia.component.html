@@ -26,8 +26,10 @@
                                         </ol>
                                     </div>
                                 </div>
-                                <div class="modal-footer">
-
+                                <div class="modal-footer m-3 p-3">
+                                    <ul class="social-icons">
+                                        <li><a *ngIf="album.spotifylink" class="spotify" href="{{album.spotifylink}}" target="_blank"><i class="fa fa-spotify"></i></a></li>
+                                    </ul>
                                     <button type="button" class="btn btn-light" data-dismiss="modal">Zamknij</button>
                                 </div>
                             </div>

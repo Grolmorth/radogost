@@ -51,7 +51,8 @@ export class DyskografiaComponent implements OnInit {
         'Odwet',
         'Tym Którzy Odeszli',
         'Trybut'
-      ]
+      ],
+      spotifylink: "https://open.spotify.com/album/0To0ZU7GBNHYtP0vVlAHb7?si=swWsQkUoQdOQ-uL729eu6w"
     },
     {
       title: 'Dark Side Of The Forest',
@@ -67,7 +68,8 @@ export class DyskografiaComponent implements OnInit {
         'From the Dark',
         'Deadly Race Trilogy',
         'Bonus Track'
-      ]
+      ],
+      spotifylink: "https://open.spotify.com/album/40bLilTykXSEQ2L9xuTsem?si=SKkFaewOQy2Vg_mI9wyjBA"
     },
     {
       title: 'Dziedzictwo Gór',
@@ -84,7 +86,8 @@ export class DyskografiaComponent implements OnInit {
         'Słowa ze Stali',
         'Dziedzictwo',
         'Dalej Wprost Przed Siebie'
-      ]
+      ],
+      spotifylink: "https://open.spotify.com/album/2IRbrJoaxRGirFmXmWQXZG?si=tvnQxNsVRbeexqi4ZWPflA"
     },
     {
       title: 'Przeklęty',
@@ -97,8 +100,9 @@ export class DyskografiaComponent implements OnInit {
         'Exmara',
         'Wśród Ruin Tej Wieży',
         'Tylko Smierć'
-      ]
-    },
+      ],
+      spotifylink: "https://open.spotify.com/album/283bZv3ItrPw5tzEBZckva?si=yzG35KsnQzStMpJgVj9kbw"
+    }
   ];
 
 
