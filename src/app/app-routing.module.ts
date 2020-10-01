@@ -20,11 +20,11 @@ const routes: Routes = [
 
   {
     path: '',
-    redirectTo: '/info',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
   {
-    path: 'info',
+    path: 'home',
     component: InfoComponent
   },
   { path: 'Kontakt', component: KontaktComponent },

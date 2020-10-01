@@ -6,8 +6,8 @@
             <div class="row" id="row">
                 <div class="col-sm-6 col-md-4 col-lg-4 p-2 m-0" *ngFor="let album of albums, let i=index">
                     <button type="button" class="btn btn-dark m-0 p-0" data-toggle="modal" attr.data-target="#album{{i}}">
-                <img src="assets/albumy/{{i+1}}300.png" class="img-fluid img-thumbnail">
-              </button>
+                      <img src="assets/albumy/{{i+1}}300.png" class="img-fluid img-thumbnail">
+                    </button>
 
                     <div class="modal fade" id="album{{i}}">
                         <div class="modal-dialog modal-dialog-centered modal-xl">

@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 import { environment } from '../environments/environment';
 
@@ -15,7 +16,7 @@ import { KonertyEditComponent } from './koncerty/konerty-edit/konerty-edit.compo
 import { KonertyListComponent } from './koncerty/konerty-list/konerty-list.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { LoginComponent } from './login/login.component';
-import { AngularFireAuthModule } from '@angular/fire/auth';
+
 import { DyskografiaComponent } from './dyskografia/dyskografia.component';
 import { FooterComponent } from './footer/footer.component';
 import { KoncertyPublicComponent } from './koncerty/koncerty-public/koncerty-public.component';
