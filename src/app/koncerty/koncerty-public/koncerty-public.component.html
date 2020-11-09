@@ -1,6 +1,6 @@
-<p class="text" *ngIf="koncert.length ===0">Aktualnie brak koncertów :(</p>
+<p class="text" *ngIf="!koncert">Aktualnie brak koncertów :(</p>
 
-<div *ngIf="koncert.length !==0" class="info">
+<div *ngIf="koncert" class="info">
     <table class="tablehead">
         <th>Koncert w</th>
         <th>Zagrają z nami</th>
@@ -21,7 +21,7 @@
                     {{koncert.when}}
                 </td>
                 <td>
-                    <a class="text" href="{{koncert.link}}" target="_blank ">Link Wydarzenia</a>
+                    <a class="text" href="{{koncert.link}}" target="_blank " *ngIf="koncert.link">Link Wydarzenia</a>
                 </td>
             </table>
         </div>

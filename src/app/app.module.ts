@@ -23,6 +23,7 @@ import { KoncertyPublicComponent } from './koncerty/koncerty-public/koncerty-pub
 import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -48,7 +49,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule, // firestore
-    AngularFireAuthModule, NgbModule,
+    AngularFireAuthModule, NgbModule, BrowserAnimationsModule,
 
   ],
   providers: [],

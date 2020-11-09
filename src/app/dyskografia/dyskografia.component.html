@@ -18,8 +18,9 @@
                                 <div class="modal-body">
                                     <img src="assets/albumy/{{i+1}}500.png" class="maxi-width float-left mr-2 pr-2">
                                     <div class="text">
-                                        <h2>{{album.title}} - {{album.year}} </h2>
+
                                         <ol>
+                                            <h2>{{album.title}} - {{album.year}} </h2>
                                             <li *ngFor="let track of album.tracklist">
                                                 {{track}}
                                             </li>

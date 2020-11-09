@@ -56,11 +56,11 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     {
         path: '',
-        redirectTo: '/info',
+        redirectTo: '/home',
         pathMatch: 'full'
     },
     {
-        path: 'info',
+        path: 'home',
         component: _info_info_component__WEBPACK_IMPORTED_MODULE_2__["InfoComponent"]
     },
     { path: 'Kontakt', component: _kontakt_kontakt_component__WEBPACK_IMPORTED_MODULE_4__["KontaktComponent"] },
@@ -158,21 +158,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
 /* harmony import */ var _angular_fire__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/fire */ "./node_modules/@angular/fire/__ivy_ngcc__/es2015/index.js");
 /* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/__ivy_ngcc__/firestore/es2015/index.js");
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _koncerty_konerty_create_konerty_create_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./koncerty/konerty-create/konerty-create.component */ "./src/app/koncerty/konerty-create/konerty-create.component.ts");
-/* harmony import */ var _koncerty_konerty_edit_konerty_edit_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./koncerty/konerty-edit/konerty-edit.component */ "./src/app/koncerty/konerty-edit/konerty-edit.component.ts");
-/* harmony import */ var _koncerty_konerty_list_konerty_list_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./koncerty/konerty-list/konerty-list.component */ "./src/app/koncerty/konerty-list/konerty-list.component.ts");
-/* harmony import */ var _kontakt_kontakt_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./kontakt/kontakt.component */ "./src/app/kontakt/kontakt.component.ts");
-/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
-/* harmony import */ var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/fire/auth */ "./node_modules/@angular/fire/__ivy_ngcc__/auth/es2015/index.js");
+/* harmony import */ var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/fire/auth */ "./node_modules/@angular/fire/__ivy_ngcc__/auth/es2015/index.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _koncerty_konerty_create_konerty_create_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./koncerty/konerty-create/konerty-create.component */ "./src/app/koncerty/konerty-create/konerty-create.component.ts");
+/* harmony import */ var _koncerty_konerty_edit_konerty_edit_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./koncerty/konerty-edit/konerty-edit.component */ "./src/app/koncerty/konerty-edit/konerty-edit.component.ts");
+/* harmony import */ var _koncerty_konerty_list_konerty_list_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./koncerty/konerty-list/konerty-list.component */ "./src/app/koncerty/konerty-list/konerty-list.component.ts");
+/* harmony import */ var _kontakt_kontakt_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./kontakt/kontakt.component */ "./src/app/kontakt/kontakt.component.ts");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
 /* harmony import */ var _dyskografia_dyskografia_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./dyskografia/dyskografia.component */ "./src/app/dyskografia/dyskografia.component.ts");
 /* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
 /* harmony import */ var _koncerty_koncerty_public_koncerty_public_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./koncerty/koncerty-public/koncerty-public.component */ "./src/app/koncerty/koncerty-public/koncerty-public.component.ts");
 /* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
 /* harmony import */ var _nav_nav_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./nav/nav.component */ "./src/app/nav/nav.component.ts");
 /* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/animations.js");
+
 
 
 
@@ -197,39 +199,39 @@ __webpack_require__.r(__webpack_exports__);
 
 class AppModule {
 }
-AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]] });
+AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]] });
 AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function AppModule_Factory(t) { return new (t || AppModule)(); }, providers: [], imports: [[
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-            _app_routing_module__WEBPACK_IMPORTED_MODULE_6__["AppRoutingModule"],
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
-            _angular_fire__WEBPACK_IMPORTED_MODULE_3__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_5__["environment"].firebaseConfig),
+            _angular_fire__WEBPACK_IMPORTED_MODULE_3__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_6__["environment"].firebaseConfig),
             _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_4__["AngularFirestoreModule"],
-            _angular_fire_auth__WEBPACK_IMPORTED_MODULE_13__["AngularFireAuthModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_19__["NgbModule"],
+            _angular_fire_auth__WEBPACK_IMPORTED_MODULE_5__["AngularFireAuthModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_19__["NgbModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_20__["BrowserAnimationsModule"],
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"],
-        _koncerty_konerty_create_konerty_create_component__WEBPACK_IMPORTED_MODULE_8__["KonertyCreateComponent"],
-        _koncerty_konerty_edit_konerty_edit_component__WEBPACK_IMPORTED_MODULE_9__["KonertyEditComponent"],
-        _koncerty_konerty_list_konerty_list_component__WEBPACK_IMPORTED_MODULE_10__["KonertyListComponent"],
-        _kontakt_kontakt_component__WEBPACK_IMPORTED_MODULE_11__["KontaktComponent"],
-        _login_login_component__WEBPACK_IMPORTED_MODULE_12__["LoginComponent"],
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"],
+        _koncerty_konerty_create_konerty_create_component__WEBPACK_IMPORTED_MODULE_9__["KonertyCreateComponent"],
+        _koncerty_konerty_edit_konerty_edit_component__WEBPACK_IMPORTED_MODULE_10__["KonertyEditComponent"],
+        _koncerty_konerty_list_konerty_list_component__WEBPACK_IMPORTED_MODULE_11__["KonertyListComponent"],
+        _kontakt_kontakt_component__WEBPACK_IMPORTED_MODULE_12__["KontaktComponent"],
+        _login_login_component__WEBPACK_IMPORTED_MODULE_13__["LoginComponent"],
         _dyskografia_dyskografia_component__WEBPACK_IMPORTED_MODULE_14__["DyskografiaComponent"],
         _footer_footer_component__WEBPACK_IMPORTED_MODULE_15__["FooterComponent"],
         _koncerty_koncerty_public_koncerty_public_component__WEBPACK_IMPORTED_MODULE_16__["KoncertyPublicComponent"],
         _header_header_component__WEBPACK_IMPORTED_MODULE_17__["HeaderComponent"],
         _nav_nav_component__WEBPACK_IMPORTED_MODULE_18__["NavComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-        _app_routing_module__WEBPACK_IMPORTED_MODULE_6__["AppRoutingModule"],
+        _app_routing_module__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"],
         _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _angular_fire__WEBPACK_IMPORTED_MODULE_3__["AngularFireModule"], _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_4__["AngularFirestoreModule"],
-        _angular_fire_auth__WEBPACK_IMPORTED_MODULE_13__["AngularFireAuthModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_19__["NgbModule"]] }); })();
+        _angular_fire_auth__WEBPACK_IMPORTED_MODULE_5__["AngularFireAuthModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_19__["NgbModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_20__["BrowserAnimationsModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
                 declarations: [
-                    _app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"],
-                    _koncerty_konerty_create_konerty_create_component__WEBPACK_IMPORTED_MODULE_8__["KonertyCreateComponent"],
-                    _koncerty_konerty_edit_konerty_edit_component__WEBPACK_IMPORTED_MODULE_9__["KonertyEditComponent"],
-                    _koncerty_konerty_list_konerty_list_component__WEBPACK_IMPORTED_MODULE_10__["KonertyListComponent"],
-                    _kontakt_kontakt_component__WEBPACK_IMPORTED_MODULE_11__["KontaktComponent"],
-                    _login_login_component__WEBPACK_IMPORTED_MODULE_12__["LoginComponent"],
+                    _app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"],
+                    _koncerty_konerty_create_konerty_create_component__WEBPACK_IMPORTED_MODULE_9__["KonertyCreateComponent"],
+                    _koncerty_konerty_edit_konerty_edit_component__WEBPACK_IMPORTED_MODULE_10__["KonertyEditComponent"],
+                    _koncerty_konerty_list_konerty_list_component__WEBPACK_IMPORTED_MODULE_11__["KonertyListComponent"],
+                    _kontakt_kontakt_component__WEBPACK_IMPORTED_MODULE_12__["KontaktComponent"],
+                    _login_login_component__WEBPACK_IMPORTED_MODULE_13__["LoginComponent"],
                     _dyskografia_dyskografia_component__WEBPACK_IMPORTED_MODULE_14__["DyskografiaComponent"],
                     _footer_footer_component__WEBPACK_IMPORTED_MODULE_15__["FooterComponent"],
                     _koncerty_koncerty_public_koncerty_public_component__WEBPACK_IMPORTED_MODULE_16__["KoncertyPublicComponent"],
@@ -238,14 +240,14 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                 ],
                 imports: [
                     _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-                    _app_routing_module__WEBPACK_IMPORTED_MODULE_6__["AppRoutingModule"],
+                    _app_routing_module__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"],
                     _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
-                    _angular_fire__WEBPACK_IMPORTED_MODULE_3__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_5__["environment"].firebaseConfig),
+                    _angular_fire__WEBPACK_IMPORTED_MODULE_3__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_6__["environment"].firebaseConfig),
                     _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_4__["AngularFirestoreModule"],
-                    _angular_fire_auth__WEBPACK_IMPORTED_MODULE_13__["AngularFireAuthModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_19__["NgbModule"],
+                    _angular_fire_auth__WEBPACK_IMPORTED_MODULE_5__["AngularFireAuthModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_19__["NgbModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_20__["BrowserAnimationsModule"],
                 ],
                 providers: [],
-                bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
+                bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
             }]
     }], null, null); })();
 
@@ -272,9 +274,17 @@ function DyskografiaComponent_div_4_li_15_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const track_r14 = ctx.$implicit;
+    const track_r15 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", track_r14, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", track_r15, " ");
+} }
+function DyskografiaComponent_div_4_a_19_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 21);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const album_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("href", album_r11.spotifylink, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
 } }
 function DyskografiaComponent_div_4_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 5);
@@ -292,17 +302,22 @@ function DyskografiaComponent_div_4_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div", 13);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "img", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 15);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "h2");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "ol");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "h2");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "ol");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](15, DyskografiaComponent_div_4_li_15_Template, 2, 1, "li", 16);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "div", 17);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "button", 18);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "Zamknij");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "ul", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "li");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](19, DyskografiaComponent_div_4_a_19_Template, 2, 1, "a", 19);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "button", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "Zamknij");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -322,10 +337,12 @@ function DyskografiaComponent_div_4_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](album_r11.title);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate1"]("src", "assets/albumy/", i_r12 + 1, "500.png", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", album_r11.title, " - ", album_r11.year, " ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", album_r11.tracklist);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", album_r11.spotifylink);
 } }
 class DyskografiaComponent {
     constructor() {
@@ -371,7 +388,8 @@ class DyskografiaComponent {
                     'Odwet',
                     'Tym Którzy Odeszli',
                     'Trybut'
-                ]
+                ],
+                spotifylink: "https://open.spotify.com/album/0To0ZU7GBNHYtP0vVlAHb7?si=swWsQkUoQdOQ-uL729eu6w"
             },
             {
                 title: 'Dark Side Of The Forest',
@@ -387,7 +405,8 @@ class DyskografiaComponent {
                     'From the Dark',
                     'Deadly Race Trilogy',
                     'Bonus Track'
-                ]
+                ],
+                spotifylink: "https://open.spotify.com/album/40bLilTykXSEQ2L9xuTsem?si=SKkFaewOQy2Vg_mI9wyjBA"
             },
             {
                 title: 'Dziedzictwo Gór',
@@ -404,7 +423,8 @@ class DyskografiaComponent {
                     'Słowa ze Stali',
                     'Dziedzictwo',
                     'Dalej Wprost Przed Siebie'
-                ]
+                ],
+                spotifylink: "https://open.spotify.com/album/2IRbrJoaxRGirFmXmWQXZG?si=tvnQxNsVRbeexqi4ZWPflA"
             },
             {
                 title: 'Przeklęty',
@@ -417,19 +437,20 @@ class DyskografiaComponent {
                     'Exmara',
                     'Wśród Ruin Tej Wieży',
                     'Tylko Smierć'
-                ]
-            },
+                ],
+                spotifylink: "https://open.spotify.com/album/283bZv3ItrPw5tzEBZckva?si=yzG35KsnQzStMpJgVj9kbw"
+            }
         ];
     }
     ngOnInit() { }
 }
 DyskografiaComponent.ɵfac = function DyskografiaComponent_Factory(t) { return new (t || DyskografiaComponent)(); };
-DyskografiaComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DyskografiaComponent, selectors: [["app-dyskografia"]], decls: 5, vars: 1, consts: [[1, "info"], [1, "disc"], [1, "container"], ["id", "row", 1, "row"], ["class", "col-sm-6 col-md-4 col-lg-4 p-2 m-0", 4, "ngFor", "ngForOf"], [1, "col-sm-6", "col-md-4", "col-lg-4", "p-2", "m-0"], ["type", "button", "data-toggle", "modal", 1, "btn", "btn-dark", "m-0", "p-0"], [1, "img-fluid", "img-thumbnail", 3, "src"], [1, "modal", "fade", 3, "id"], [1, "modal-dialog", "modal-dialog-centered", "modal-xl"], [1, "modal-content", "bg-dark"], [1, "modal-header"], [1, "modal-title", "m-auto", "text-light"], [1, "modal-body"], [1, "maxi-width", "float-left", "mr-2", "pr-2", 3, "src"], [1, "text"], [4, "ngFor", "ngForOf"], [1, "modal-footer"], ["type", "button", "data-dismiss", "modal", 1, "btn", "btn-light"]], template: function DyskografiaComponent_Template(rf, ctx) { if (rf & 1) {
+DyskografiaComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DyskografiaComponent, selectors: [["app-dyskografia"]], decls: 5, vars: 1, consts: [[1, "info"], [1, "disc"], [1, "container"], ["id", "row", 1, "row"], ["class", "col-sm-6 col-md-4 col-lg-4 p-2 m-0", 4, "ngFor", "ngForOf"], [1, "col-sm-6", "col-md-4", "col-lg-4", "p-2", "m-0"], ["type", "button", "data-toggle", "modal", 1, "btn", "btn-dark", "m-0", "p-0"], [1, "img-fluid", "img-thumbnail", 3, "src"], [1, "modal", "fade", 3, "id"], [1, "modal-dialog", "modal-dialog-centered", "modal-xl"], [1, "modal-content", "bg-dark"], [1, "modal-header"], [1, "modal-title", "m-auto", "text-light"], [1, "modal-body"], [1, "maxi-width", "float-left", "mr-2", "pr-2", 3, "src"], [1, "text"], [4, "ngFor", "ngForOf"], [1, "modal-footer", "m-3", "p-3"], [1, "social-icons"], ["class", "spotify", "target", "_blank", 3, "href", 4, "ngIf"], ["type", "button", "data-dismiss", "modal", 1, "btn", "btn-light"], ["target", "_blank", 1, "spotify", 3, "href"], [1, "fa", "fa-spotify"]], template: function DyskografiaComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, DyskografiaComponent_div_4_Template, 19, 8, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, DyskografiaComponent_div_4_Template, 22, 9, "div", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -437,7 +458,7 @@ DyskografiaComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdef
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.albums);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2R5c2tvZ3JhZmlhL2R5c2tvZ3JhZmlhLmNvbXBvbmVudC5jc3MifQ== */"] });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2R5c2tvZ3JhZmlhL2R5c2tvZ3JhZmlhLmNvbXBvbmVudC5jc3MifQ== */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](DyskografiaComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -518,6 +539,8 @@ FooterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeaderComponent", function() { return HeaderComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/__ivy_ngcc__/fesm2015/animations.js");
+
 
 
 class HeaderComponent {
@@ -527,17 +550,37 @@ class HeaderComponent {
     }
 }
 HeaderComponent.ɵfac = function HeaderComponent_Factory(t) { return new (t || HeaderComponent)(); };
-HeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HeaderComponent, selectors: [["app-header"]], decls: 2, vars: 0, consts: [["id", "logo"], ["src", "assets/logo5.png", "alt", "logo radogost", "height", "150px"]], template: function HeaderComponent_Template(rf, ctx) { if (rf & 1) {
+HeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HeaderComponent, selectors: [["app-header"]], decls: 2, vars: 1, consts: [["id", "logo"], ["src", "assets/logo5.png", "alt", "logo radogost", "height", "150px"]], template: function HeaderComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "img", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LmNzcyJ9 */"] });
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("@fadeIn", "in");
+    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LmNzcyJ9 */"], data: { animation: [
+            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["trigger"])('fadeIn', [
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["state"])('in', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({ opacity: 1 })),
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["transition"])(':enter', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({ opacity: 0 }),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["animate"])(5000)
+                ])
+            ])
+        ] } });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](HeaderComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
                 selector: 'app-header',
                 templateUrl: './header.component.html',
-                styleUrls: ['./header.component.css']
+                styleUrls: ['./header.component.css'],
+                animations: [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["trigger"])('fadeIn', [
+                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["state"])('in', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({ opacity: 1 })),
+                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["transition"])(':enter', [
+                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({ opacity: 0 }),
+                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["animate"])(5000)
+                        ])
+                    ])
+                ]
             }]
     }], function () { return []; }, null); })();
 
@@ -624,6 +667,14 @@ function KoncertyPublicComponent_p_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Aktualnie brak koncert\u00F3w :(");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } }
+function KoncertyPublicComponent_div_1_div_10_table_2_a_8_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Link Wydarzenia");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const koncert_r20 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2).$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("href", koncert_r20.link, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+} }
 function KoncertyPublicComponent_div_1_div_10_table_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "table", 8);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "td");
@@ -636,32 +687,30 @@ function KoncertyPublicComponent_div_1_div_10_table_2_Template(rf, ctx) { if (rf
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "td");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "a", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Link Wydarzenia");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, KoncertyPublicComponent_div_1_div_10_table_2_a_8_Template, 2, 1, "a", 9);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const koncert_r18 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
+    const koncert_r20 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", koncert_r18.where, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", koncert_r20.where, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", koncert_r18.with, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", koncert_r20.with, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", koncert_r18.when, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", koncert_r20.when, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("href", koncert_r18.link, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", koncert_r20.link);
 } }
 function KoncertyPublicComponent_div_1_div_10_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 6);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, KoncertyPublicComponent_div_1_div_10_table_2_Template, 10, 4, "table", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, KoncertyPublicComponent_div_1_div_10_table_2_Template, 9, 4, "table", 7);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const koncert_r18 = ctx.$implicit;
+    const koncert_r20 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", koncert_r18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", koncert_r20);
 } }
 function KoncertyPublicComponent_div_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 3);
@@ -682,31 +731,34 @@ function KoncertyPublicComponent_div_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](10, KoncertyPublicComponent_div_1_div_10_Template, 3, 1, "div", 5);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r16 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    const ctx_r18 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r16.koncert);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r18.koncert);
 } }
 class KoncertyPublicComponent {
     constructor(koncertService) {
         this.koncertService = koncertService;
+        this.koncert = null;
     }
     ngOnInit() {
         this.getKoncertList();
     }
     getKoncertList() {
         this.koncertService.getKoncertList().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(changes => changes.map(c => (Object.assign({ key: c.payload.doc.id }, c.payload.doc.data()))))).subscribe(koncert => {
-            this.koncert = koncert;
+            if (koncert.length > 0) {
+                this.koncert = koncert;
+            }
         });
     }
 }
 KoncertyPublicComponent.ɵfac = function KoncertyPublicComponent_Factory(t) { return new (t || KoncertyPublicComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_koncerty_service__WEBPACK_IMPORTED_MODULE_2__["KoncertyService"])); };
-KoncertyPublicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: KoncertyPublicComponent, selectors: [["app-koncerty-public"]], decls: 2, vars: 2, consts: [["class", "text", 4, "ngIf"], ["class", "info", 4, "ngIf"], [1, "text"], [1, "info"], [1, "tablehead"], ["class", "tbody", 4, "ngFor", "ngForOf"], [1, "tbody"], ["class", "tablebody", 4, "ngIf"], [1, "tablebody"], ["target", "_blank ", 1, "text", 3, "href"]], template: function KoncertyPublicComponent_Template(rf, ctx) { if (rf & 1) {
+KoncertyPublicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: KoncertyPublicComponent, selectors: [["app-koncerty-public"]], decls: 2, vars: 2, consts: [["class", "text", 4, "ngIf"], ["class", "info", 4, "ngIf"], [1, "text"], [1, "info"], [1, "tablehead"], ["class", "tbody", 4, "ngFor", "ngForOf"], [1, "tbody"], ["class", "tablebody", 4, "ngIf"], [1, "tablebody"], ["class", "text", "target", "_blank ", 3, "href", 4, "ngIf"], ["target", "_blank ", 1, "text", 3, "href"]], template: function KoncertyPublicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, KoncertyPublicComponent_p_0_Template, 2, 0, "p", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, KoncertyPublicComponent_div_1_Template, 11, 1, "div", 1);
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.koncert.length === 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx.koncert);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.koncert.length !== 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.koncert);
     } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2tvbmNlcnR5L2tvbmNlcnR5LXB1YmxpYy9rb25jZXJ0eS1wdWJsaWMuY29tcG9uZW50LmNzcyJ9 */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](KoncertyPublicComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
@@ -809,7 +861,7 @@ class KonertyCreateComponent {
     }
 }
 KonertyCreateComponent.ɵfac = function KonertyCreateComponent_Factory(t) { return new (t || KonertyCreateComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_koncerty_service__WEBPACK_IMPORTED_MODULE_2__["KoncertyService"])); };
-KonertyCreateComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: KonertyCreateComponent, selectors: [["app-konerty-create"]], decls: 28, vars: 6, consts: [[3, "hidden"], [3, "ngSubmit"], [1, "form-group"], ["for", "gdzie"], ["type", "text", "id", "gdzie", "required", "", "name", "gdzie", "placeholder", "Wpisz gdzie...", 3, "ngModel", "ngModelChange"], ["for", "kiedy"], ["type", "text", "id", "kiedy", "required", "", "name", "kiedy", "placeholder", "Wpisz kiedy...", 3, "ngModel", "ngModelChange"], ["for", "zkim"], ["type", "text", "id", "zkim", "required", "", "name", "zkim", "placeholder", "Wpisz z kim...", 3, "ngModel", "ngModelChange"], ["for", "link"], ["type", "text", "id", "link", "required", "", "name", "link", "placeholder", "Wpisz link...", 3, "ngModel", "ngModelChange"], ["type", "submit"], [3, "click"]], template: function KonertyCreateComponent_Template(rf, ctx) { if (rf & 1) {
+KonertyCreateComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: KonertyCreateComponent, selectors: [["app-konerty-create"]], decls: 28, vars: 6, consts: [[3, "hidden"], [3, "ngSubmit"], [1, "form-group"], ["for", "gdzie"], ["type", "text", "id", "gdzie", "required", "", "name", "gdzie", "placeholder", "Wpisz gdzie...", 3, "ngModel", "ngModelChange"], ["for", "kiedy"], ["type", "text", "id", "kiedy", "required", "", "name", "kiedy", "placeholder", "Wpisz kiedy...", 3, "ngModel", "ngModelChange"], ["for", "zkim"], ["type", "text", "id", "zkim", "required", "", "name", "zkim", "placeholder", "Wpisz z kim...", 3, "ngModel", "ngModelChange"], ["for", "link"], ["type", "text", "id", "link", "required", "", "name", "link", "placeholder", "", 3, "ngModel", "ngModelChange"], ["type", "submit"], [3, "click"]], template: function KonertyCreateComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "app-konerty-list");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h3");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Dodaj Koncert");
@@ -907,7 +959,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function KonertyEditComponent_tbody_1_Template(rf, ctx) { if (rf & 1) {
-    const _r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    const _r27 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "tbody");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "td", 1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
@@ -923,21 +975,21 @@ function KonertyEditComponent_tbody_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "td");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "button", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function KonertyEditComponent_tbody_1_Template_button_click_10_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r23); const ctx_r22 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r22.deleteKoncert(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function KonertyEditComponent_tbody_1_Template_button_click_10_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r27); const ctx_r26 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r26.deleteKoncert(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Usu\u0144");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r21 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    const ctx_r25 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx_r21.koncert.where, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx_r25.koncert.where, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx_r21.koncert.with, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx_r25.koncert.with, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx_r21.koncert.when, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx_r25.koncert.when, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx_r21.koncert.link, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx_r25.koncert.link, " ");
 } }
 class KonertyEditComponent {
     constructor(koncertsService) {
@@ -1198,7 +1250,7 @@ class NavComponent {
     }
 }
 NavComponent.ɵfac = function NavComponent_Factory(t) { return new (t || NavComponent)(); };
-NavComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NavComponent, selectors: [["app-nav"]], decls: 17, vars: 0, consts: [["id", "navv", 1, "navbar", "navbar-expand-sm", "fixed-top", "bg-color", "navbar-dark"], ["type", "button", "data-toggle", "collapse", "data-target", "#mainmenu", "aria-controls", "mainmenu", "aria-expanded", "false", "aria-label", "Navigation Button", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "mainmenu", 1, "collapse", "navbar-collapse"], [1, "navbar-nav", "mx-auto"], [1, "nav-item"], ["routerLink", "info", 1, "nav-link"], ["routerLink", "Koncerty", 1, "nav-link"], ["routerLink", "dyskografia", 1, "nav-link"], ["routerLink", "Kontakt", 1, "nav-link"]], template: function NavComponent_Template(rf, ctx) { if (rf & 1) {
+NavComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NavComponent, selectors: [["app-nav"]], decls: 17, vars: 0, consts: [["id", "navv", 1, "navbar", "navbar-expand-sm", "fixed-top", "bg-color", "navbar-dark"], ["type", "button", "data-toggle", "collapse", "data-target", "#mainmenu", "aria-controls", "mainmenu", "aria-expanded", "false", "aria-label", "Navigation Button", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "mainmenu", 1, "collapse", "navbar-collapse"], [1, "navbar-nav", "mx-auto"], [1, "nav-item"], ["routerLink", "home", 1, "nav-link"], ["routerLink", "Koncerty", 1, "nav-link"], ["routerLink", "dyskografia", 1, "nav-link"], ["routerLink", "Kontakt", 1, "nav-link"]], template: function NavComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nav", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "span", 2);
@@ -1207,7 +1259,7 @@ NavComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "ul", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "li", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "a", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Info");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Home");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "li", 5);

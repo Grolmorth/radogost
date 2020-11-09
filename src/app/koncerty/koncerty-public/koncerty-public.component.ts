@@ -10,12 +10,13 @@ import { map } from 'rxjs/operators';
 })
 export class KoncertyPublicComponent implements OnInit {
 
-  koncert: any;
+  koncert: any = null;
 
   constructor(private koncertService: KoncertyService) { }
 
   ngOnInit() {
     this.getKoncertList();
+
   }
 
   getKoncertList() {
@@ -26,7 +27,9 @@ export class KoncertyPublicComponent implements OnInit {
         )
       )
     ).subscribe(koncert => {
-      this.koncert = koncert;
+      if (koncert.length > 0) {
+        this.koncert = koncert;
+      }
     });
   }
 
